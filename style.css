@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    background-color: rgb(236, 242, 248);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    padding: 1rem;
+}
+
+.container img{
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.right img{
+    width: 50px;
+    border-radius: 50px;
+}
+
+.right{
+    width: 100%;
+    padding: 1rem;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 1px 5px 0px rgba(176,135,135,0.75);
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(176,135,135,0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(176,135,135,0.75);
+}
+
+.first{
+    font-size: 18px;
+    color: rgb(72, 85, 106);
+    font-weight: 700;
+}
+
+.second{
+    font-size: 14px;
+    color: rgb(109, 127, 151);
+    font-weight: 500;
+    opacity: .8;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+}
+
+.sub-profile{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.name{
+    color: rgb(72, 85, 106);
+    font-weight: 700;
+}
+
+.date{
+    color: rgb(109, 127, 151);
+    opacity: .8;
+}
+
+.share{ 
+    background-color: rgba(0, 0, 0, 0.99); 
+    opacity: 0.9;
+    border-radius: 50px;
+    padding: .3rem;
+}
+
+.share:active{
+    background-color: rgb(0, 2, 7);
+    padding: .4;
+    transition: 0.4s;
+}
+
+#myIcon{
+    width: 30px;
+}
+
+#myIcon:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.shown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    border-radius: 6px;
+}
+
+.shown:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.shown span{
+    color: #ffff;
+}
+
+.shown:active{
+    opacity: 0.8;
+}
+
+#myPopup{
+    width: 30px;
+}
+
+
+@media screen and(max-width: 375px) {
+    .container{
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .right{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .drawers{
+        display: flex;
+        flex-direction: column;
+    }
+}
