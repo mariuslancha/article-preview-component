@@ -16,13 +16,13 @@ body{
 
 .container{
     display: flex;
-    width: 800px;
     justify-content: center;
+    width: 800px;
     padding: 1rem;
 }
 
 .container img{
-    width: 45%;
+    width: 100%;
     border-radius: 10px 0px 0px 10px;
 }
 
